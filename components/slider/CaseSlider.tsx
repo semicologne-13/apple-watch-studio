@@ -11,7 +11,6 @@ import {
     selectSelectedCase,
     selectSelectedCaseVariant
 } from '@/lib/store/features/collectionSlice';
-import { getImageSize } from "@/utils/imageSizes";
 
 const generateCaseImagePath = (
     collectionId: string,
@@ -35,7 +34,6 @@ export const CaseSlider = () => {
     const currentCollectionData = collections.find(c => c.id === selectedCollection);
     const currentSizeData = currentCollectionData?.sizes.find(s => s.id === selectedSize);
     
-    const { width, height } = currentSizeData ? getImageSize(currentSizeData.name) : { width: 0, height: 0 };
     const sliderRef = useRef<HTMLDivElement>(null);
 
     const handleCaseClick = (caseId: string, variantId: string) => {
@@ -60,7 +58,6 @@ export const CaseSlider = () => {
 
     useEffect(() => {
         if (currentSizeData && sliderRef.current) {
-            const firstCase = currentSizeData.cases[0];
             const element = document.getElementById(`case-${selectedCaseVariantId}`);
             if (element) {
                 element.scrollIntoView({
@@ -70,7 +67,7 @@ export const CaseSlider = () => {
                 });
             }
         }
-    }, [selectedCollection, selectedSize, selectedCaseId, selectedCaseVariantId]);
+    }, [selectedCollection, selectedSize, selectedCaseId, selectedCaseVariantId, currentSizeData]);
 
     if (!currentSizeData) return null;
 

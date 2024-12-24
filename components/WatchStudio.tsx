@@ -14,7 +14,7 @@ import { selectSelectedBandImage, selectSelectedCaseImage } from '@/lib/store/fe
 
 export default function WatchStudio() {
   
-  const { isGettingStarted, isWatchCollection } = useAppSelector((state: any) => state.ui);
+  const { isGettingStarted, isWatchCollection } = useAppSelector((state) => state.ui);
   const [sideview, setSideView] = useState(false);
   const { openButton } = useAppSelector((state) => state.button);
 

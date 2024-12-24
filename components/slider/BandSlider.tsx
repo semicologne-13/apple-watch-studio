@@ -56,14 +56,8 @@ export const BandSlider = () => {
         }
     };
 
-    const handleBandHover = (bandId: string, variantId: string) => {
-        dispatch(setSelectedBand(bandId));
-        dispatch(setSelectedBandVariant(variantId))
-    }
-
     useEffect(() => {
         if (currentSizeData && sliderRef.current) {
-            const firstBand = currentSizeData.bands[0];
             const element = document.getElementById(`band-${selectedBandVariantId}`);
             if (element) {
                 element.scrollIntoView({
@@ -73,7 +67,7 @@ export const BandSlider = () => {
                 });
             }
         }
-    }, [selectedCollection, selectedSize, selectedBandId, selectedBandVariantId]);
+    }, [selectedCollection, selectedSize, selectedBandId, selectedBandVariantId, currentSizeData]);
 
     if (!currentSizeData) return null;
 

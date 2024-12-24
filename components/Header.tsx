@@ -1,20 +1,20 @@
 'use client'
 
-import React, { useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'motion/react'
 import { ChevronDown } from 'lucide-react'
-import { useDispatch, useSelector } from 'react-redux'
 
 import lightLogo from '@/public/assets/logo/apple-watch-design-studio-logo.png'
 import darkLogo from '@/public/assets/logo/apple-watch-design-studio-logo-dark.png'
 import { Button } from '@/components/ui/button'
 import { setIsWatchCollection } from '@/lib/store/features/uiSlice'
+import { useAppDispatch, useAppSelector } from '@/lib/hooks'
 
 export default function Header() {
-    const dispatch = useDispatch();
-    const { isGettingStarted, isWatchCollection } = useSelector((state: any) => state.ui);
+    const dispatch = useAppDispatch();
+    const { isGettingStarted, isWatchCollection } = useAppSelector((state) => state.ui);
 
     if(isGettingStarted)
         return(

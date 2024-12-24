@@ -111,7 +111,7 @@ export default function SizeSlider() {
                             {collections
                                 .find((opt) => opt.id === selectedCollection)
                                 ?.sizes.map((option) => {
-                                    const { width, height } = getImageSize(option.name);
+                                    const { width } = getImageSize(option.name);
                                     
                                     const variants = getCurrentVariants(option.id);
                                     if(!variants) return null;

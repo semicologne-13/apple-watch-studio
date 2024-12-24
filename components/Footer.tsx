@@ -11,9 +11,7 @@ import {
     selectSelectedCase,
     selectSelectedBand,
     setSelectedCaseVariant,
-    setSelectedBandVariant,
-    selectSelectedCaseVariant,
-    selectSelectedBandVariant
+    setSelectedBandVariant
 } from "@/lib/store/features/collectionSlice";
 import { toggleButton } from "@/lib/store/features/buttonSlice";
 import { WatchSizeIcon } from "@/components/svg/WatchSizeIcon";
@@ -29,9 +27,7 @@ const Footer = () => {
     const selectedCollectionId = useAppSelector(selectSelectedCollection);
     const selectedSizeId = useAppSelector(selectSelectedSize);
     const selectedCaseId = useAppSelector(selectSelectedCase);
-    const selectedCaseVariantId = useAppSelector(selectSelectedCaseVariant);
     const selectedBandId = useAppSelector(selectSelectedBand);
-    const selectedBandVariantId = useAppSelector(selectSelectedBandVariant);
 
     // Get the current collection and size data
     const currentCollection = collections.find(col => col.id === selectedCollectionId);
