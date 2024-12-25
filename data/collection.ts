@@ -1650,7 +1650,7 @@ export const collection: watchCollection[] = [
                 id: "42mm",
                 name: "42mm",
                 price: 399,
-                image: '/assets/sizes/APPLE_WATCH_SERIES_10/42mm/ALUMINIUM/JET_BLACK_ALUMINIUM.PNG',
+                image: '/assets/sizes/APPLE_WATCH_SERIES_10/42mm/ALUMINIUM/JET_BLACK_ALUMINIUM.png',
                 cases: [
                     {
                         id: 'ALUMINIUM',
@@ -1660,19 +1660,19 @@ export const collection: watchCollection[] = [
                                 id: 'SILVER_ALUMINIUM',
                                 name: 'Silver Aluminium Case',
                                 price: 0,
-                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/42mm/ALUMINIUM/SILVER_ALUMINIUM.PNG'
+                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/42mm/ALUMINIUM/SILVER_ALUMINIUM.png'
                             },
                             {
                                 id: 'ROSE_GOLD_ALUMINIUM',
                                 name: 'Rose Gold Aluminium Case',
                                 price: 0,
-                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/42mm/ALUMINIUM/ROSE_GOLD_ALUMINIUM.PNG'
+                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/42mm/ALUMINIUM/ROSE_GOLD_ALUMINIUM.png'
                             },
                             {
                                 id: 'JET_BLACK_ALUMINIUM',
                                 name: 'Jet Black Aluminium Case',
                                 price: 0,
-                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/42mm/ALUMINIUM/JET_BLACK_ALUMINIUM.PNG'
+                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/42mm/ALUMINIUM/JET_BLACK_ALUMINIUM.png'
                             }
                         ]
                     },
@@ -1684,19 +1684,19 @@ export const collection: watchCollection[] = [
                                 id: 'NATURAL_TITANIUM',
                                 name: 'Natural Titanium Case',
                                 price: 0,
-                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/42mm/TITANIUM/NATURAL_TITANIUM.PNG'
+                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/42mm/TITANIUM/NATURAL_TITANIUM.png'
                             },
                             {
                                 id: 'GOLD_TITANIUM',
                                 name: 'Gold Titanium Case',
                                 price: 0,
-                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/42mm/TITANIUM/GOLD_TITANIUM.PNG'
+                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/42mm/TITANIUM/GOLD_TITANIUM.png'
                             },
                             {
                                 id: 'SLATE_TITANIUM',
                                 name: 'Slate Titanium Case',
                                 price: 0,
-                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/42mm/TITANIUM/SLATE_TITANIUM.PNG'
+                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/42mm/TITANIUM/SLATE_TITANIUM.png'
                             }
                         ]
                     },
@@ -1707,7 +1707,7 @@ export const collection: watchCollection[] = [
                 id: "46mm",
                 name: "46mm",
                 price: 429,
-                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/ALUMINIUM/JET_BLACK_ALUMINIUM.PNG',
+                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/ALUMINIUM/JET_BLACK_ALUMINIUM.png',
                 cases: [
                     {
                         id: 'ALUMINIUM',
@@ -1717,19 +1717,19 @@ export const collection: watchCollection[] = [
                                 id: 'SILVER_ALUMINIUM',
                                 name: 'Silver Aluminium Case',
                                 price: 0,
-                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/ALUMINIUM/SILVER_ALUMINIUM.PNG'
+                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/ALUMINIUM/SILVER_ALUMINIUM.png'
                             },
                             {
                                 id: 'ROSE_GOLD_ALUMINIUM',
                                 name: 'Rose Gold Aluminium Case',
                                 price: 0,
-                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/ALUMINIUM/ROSE_GOLD_ALUMINIUM.PNG'
+                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/ALUMINIUM/ROSE_GOLD_ALUMINIUM.png'
                             },
                             {
                                 id: 'JET_BLACK_ALUMINIUM',
                                 name: 'Jet Black Aluminium Case',
                                 price: 0,
-                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/ALUMINIUM/JET_BLACK_ALUMINIUM.PNG'
+                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/ALUMINIUM/JET_BLACK_ALUMINIUM.png'
                             }
                         ]
                     },
@@ -1741,19 +1741,19 @@ export const collection: watchCollection[] = [
                                 id: 'NATURAL_TITANIUM',
                                 name: 'Natural Titanium Case',
                                 price: 0,
-                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/TITANIUM/NATURAL_TITANIUM.PNG'
+                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/TITANIUM/NATURAL_TITANIUM.png'
                             },
                             {
                                 id: 'GOLD_TITANIUM',
                                 name: 'Gold Titanium Case',
                                 price: 0,
-                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/TITANIUM/GOLD_TITANIUM.PNG'
+                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/TITANIUM/GOLD_TITANIUM.png'
                             },
                             {
                                 id: 'SLATE_TITANIUM',
                                 name: 'Slate Titanium Case',
                                 price: 0,
-                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/TITANIUM/SLATE_TITANIUM.PNG'
+                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/TITANIUM/SLATE_TITANIUM.png'
                             }
                         ]
                     },
@@ -1893,7 +1893,7 @@ export const defaultValues:watchCollection[] = [
                 id: "46mm",
                 name: "46mm",
                 price: 1899,
-                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/ALUMINIUM/JET_BLACK_ALUMINIUM.PNG',
+                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/ALUMINIUM/JET_BLACK_ALUMINIUM.png',
                 cases: [
                     {
                         id: 'ALUMINIUM',
@@ -1903,7 +1903,7 @@ export const defaultValues:watchCollection[] = [
                                 id: 'JET_BLACK_ALUMINIUM',
                                 name: 'Jet Black Aluminium Case',
                                 price: 0,
-                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/ALUMINIUM/JET_BLACK_ALUMINIUM.PNG'
+                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/ALUMINIUM/JET_BLACK_ALUMINIUM.png'
                             }
                         ]
                     },

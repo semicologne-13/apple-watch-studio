@@ -20,7 +20,7 @@ const generateCaseImagePath = (
         variantId === defaultValues[0].sizes[0].cases[0].variant[0].id) {
         return defaultValues[0].sizes[0].cases[0].variant[0].image;
     }
-    return `/assets/sizes/${collectionId}/${sizeId}/${caseId}/${variantId}.png`;
+    return `/assets/sizes/${collectionId}/${sizeId}/${caseId}/${variantId}`;
 };
 
 const generateBandImagePath = (
@@ -36,7 +36,7 @@ const generateBandImagePath = (
         variantId === defaultValues[0].sizes[0].bands[0].variant[0].id) {
         return defaultValues[0].sizes[0].bands[0].variant[0].image;
     }
-    return `/assets/sizes/${collectionId}/${sizeId}/bands/${bandId}/${variantId}.png`;
+    return `/assets/sizes/${collectionId}/${sizeId}/bands/${bandId}/${variantId}`;
 };
 
 const initialState: WatchState = {
