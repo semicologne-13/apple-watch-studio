@@ -124,7 +124,7 @@ export const BandSlider = () => {
                 </div>
                 <div className="absolute top-1 z-10 h-auto max-w-[500px] w-[52vh] start-[50%] combinedimage m-auto">
                     <Image
-                        src={currentCaseImage!}
+                        src={currentCaseImage!.includes('.png') ? currentCaseImage! :`${currentCaseImage!}.png`}
                         height={1000}
                         width={1000}
                         alt="watch case preview"

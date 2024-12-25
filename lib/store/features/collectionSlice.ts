@@ -142,6 +142,12 @@ export const collectionSlice = createSlice({
                     action.payload,
                     case_.variant[0].id
                 );
+                state.selectedBandImage = generateBandImagePath(
+                    state.selectedCollection!,
+                    state.selectedSize!,
+                    state.selectedBand!,
+                    state.selectedBandVariant!
+                )
             }
         },
         setSelectedCaseVariant: (state, action: PayloadAction<string>) => {
@@ -167,6 +173,13 @@ export const collectionSlice = createSlice({
                     state.selectedSize!,
                     action.payload,
                     band.variant[0].id
+                );
+                
+                state.selectedCaseImage = generateCaseImagePath(
+                    state.selectedCollection!,
+                    state.selectedSize!,
+                    state.selectedCase!,
+                    state.selectedCaseVariant!
                 );
             }
         },
