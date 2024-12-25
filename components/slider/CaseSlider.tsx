@@ -18,7 +18,7 @@ const generateCaseImagePath = (
     caseId: string,
     variantId: string
 ): string => {
-    return `/assets/sizes/${collectionId}/${sizeId}/${caseId}/${variantId}`;
+    return `/assets/sizes/${collectionId}/${sizeId}/${caseId}/${variantId}.png`;
 };
 
 export const CaseSlider = () => {

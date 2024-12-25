@@ -18,7 +18,7 @@ const generateBandImagePath = (
     bandId: string,
     variantId: string
 ): string => {
-    return `/assets/sizes/${collectionId}/${sizeId}/bands/${bandId}/${variantId}`;
+    return `/assets/sizes/${collectionId}/${sizeId}/bands/${bandId}/${variantId}.png`;
 };
 
 export const BandSlider = () => {
