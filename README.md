@@ -10,7 +10,6 @@ An interactive web-based tool for customizing Apple Watch designs in real-time. 
   - Various sizes
   - Different case materials
   - Diverse band options
-- **Social Sharing**: Share your custom designs directly to social media
 - **Image Export**: Download your personalized watch configurations
 - **Responsive Design**: Seamless experience across all devices
 
@@ -77,7 +76,7 @@ apple-watch-studio/
 2. Click the "Get Started" button
 3. Select your preferred watch collection
 4. Customize size, case, and band options
-5. Share or download your design
+5. Download your custom watch design
 
 ## Contributing
 
