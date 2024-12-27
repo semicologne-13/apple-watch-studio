@@ -1911,7 +1911,7 @@ export const defaultValues:watchCollection[] = [
                 id: "46mm",
                 name: "46mm",
                 price: 1899,
-                image: '',
+                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/ALUMINIUM/JET_BLACK_ALUMINIUM.png',
                 cases: [
                     {
                         id: 'ALUMINIUM',
@@ -1921,7 +1921,7 @@ export const defaultValues:watchCollection[] = [
                                 id: 'JET_BLACK_ALUMINIUM',
                                 name: 'Jet Black Aluminium Case',
                                 price: 0,
-                                image: ''
+                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/ALUMINIUM/JET_BLACK_ALUMINIUM.png'
                             }
                         ]
                     },
@@ -1935,7 +1935,7 @@ export const defaultValues:watchCollection[] = [
                                 id: 'BLACK_SOLO_LOOP',
                                 name: 'Black Solo Loop',
                                 price: 0,
-                                image: '',
+                                image: '/assets/sizes/APPLE_WATCH_SERIES_10/46mm/bands/SOLO_LOOP/BLACK_SOLO_LOOP.png',
         
                             },
                         ]
