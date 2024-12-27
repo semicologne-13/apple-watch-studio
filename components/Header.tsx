@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'motion/react'
@@ -11,11 +11,70 @@ import darkLogo from '@/public/assets/logo/apple-watch-design-studio-logo-dark.p
 import { Button } from '@/components/ui/button'
 import { setIsWatchCollection } from '@/lib/store/features/uiSlice'
 import { useAppDispatch, useAppSelector } from '@/lib/hooks'
+import { selectSelectedBandImage, selectSelectedCaseImage } from '@/lib/store/features/collectionSlice';
 
 export default function Header() {
     const dispatch = useAppDispatch();
     const { isGettingStarted, isWatchCollection } = useAppSelector((state) => state.ui);
 
+    const selectedBandImage = useAppSelector(selectSelectedBandImage);
+    const selectedCaseImage = useAppSelector(selectSelectedCaseImage);
+    
+    const handleShare = async () => {
+        try {
+            // Create a canvas element to combine the images
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            if (!ctx) return;
+    
+            // Set canvas size
+            canvas.width = 1000;
+            canvas.height = 1000;
+    
+            // Load both images
+            const loadImage = (src: string): Promise<HTMLImageElement> => {
+                return new Promise((resolve, reject) => {
+                    const img = new window.Image();
+                    img.crossOrigin = 'anonymous';
+                    img.onload = () => resolve(img);
+                    img.onerror = reject;
+                    img.src = src;
+                });
+            };
+    
+            // Wait for both images to load
+            const [bandImg, caseImg] = await Promise.all([
+                loadImage(selectedBandImage || ''),
+                loadImage(selectedCaseImage || '')
+            ]);
+    
+            // Draw images on canvas
+            ctx.drawImage(bandImg, 0, 0, canvas.width, canvas.height);
+            ctx.drawImage(caseImg, 0, 0, canvas.width, canvas.height);
+    
+            // Convert canvas to blob
+            const blob = await new Promise<Blob>((resolve) => {
+                canvas.toBlob((blob) => {
+                    if (blob) resolve(blob);
+                }, 'image/png');
+            });
+    
+            // Create download link and trigger download
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'my-custom-watch.png';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+    
+        } catch (error) {
+            console.error('Error downloading:', error);
+        }
+    };
+    
     if(isGettingStarted)
         return(
             <div>
@@ -86,7 +145,13 @@ export default function Header() {
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}
                 >
-                    <Button variant={'save'} size={'save'}>Save</Button>
+                    <Button 
+                        variant={'save'} 
+                        size={'save'} 
+                        onClick={handleShare}
+                    >
+                        Save
+                    </Button>
                 </motion.div>
             </header>
         </div>
