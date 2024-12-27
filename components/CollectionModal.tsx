@@ -8,10 +8,11 @@ import { resetButton } from '@/lib/store/features/buttonSlice';
 
 export default function CollectionModal() {
   const dispatch = useAppDispatch();
-
   const selectedCollectionId = useAppSelector(selectSelectedCollection);
+
   const handleCollectionClick = (collectionId: string) => {
     dispatch(setSelectedCollection(collectionId));
+
     dispatch(setIsWatchCollection(false));
     dispatch(resetButton());
   };

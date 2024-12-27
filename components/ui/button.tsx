@@ -20,8 +20,8 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         transparent: "text-[#1d1d1f] dark:text-[#d1d1d2]",
-        selected: "text-black dark:text-white",
-        unselected: "dark:text-[#1d1d1f] text-[#86868b]",
+        selected: "text-black dark:text-white cursor-default",
+        unselected: "dark:text-[#1d1d1f] text-[#86868b] hover:text-blue-500 dark:hover:text-blue-500",
         save: "text-white bg-[#0071E3]",
         selectedFooter: "font-text font-semibold",
         unselectedFooter: "font-text font-normal"

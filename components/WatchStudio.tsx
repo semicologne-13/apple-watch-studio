@@ -1,16 +1,20 @@
 'use client'
 import React, { useState } from 'react'
-import { AnimatePresence, motion } from 'motion/react'
-import GettingStarted from './GettingStarted';
-import CollectionModal from './CollectionModal';
-import Footer from './Footer';
-import WatchInfo from './WatchInfo';
 import Image from 'next/image';
+import { AnimatePresence, motion } from 'motion/react'
+
 import { useAppSelector } from '@/lib/hooks';
-import SizeSlider from './slider/SizeSlider';
-import { CaseSlider } from './slider/CaseSlider';
-import { BandSlider } from './slider/BandSlider';
 import { selectSelectedBandImage, selectSelectedCaseImage } from '@/lib/store/features/collectionSlice';
+
+import GettingStarted from '@/components/GettingStarted';
+import CollectionModal from '@/components/CollectionModal';
+import Footer from '@/components/Footer';
+import WatchInfo from '@/components/WatchInfo';
+
+import SizeSlider from '@/components/slider/SizeSlider';
+import CaseSlider from '@/components/slider/CaseSlider';
+import BandSlider from '@/components/slider/BandSlider';
+
 
 export default function WatchStudio() {
   
@@ -77,6 +81,7 @@ export default function WatchStudio() {
                         duration: 0.7,
                         ease: "easeInOut",
                       }}
+                      className='justify-center items-center'
                     >
                       <Image
                         src={selectedBandImage || ''}

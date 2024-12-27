@@ -20,7 +20,7 @@ const generateCaseImagePath = (
         variantId === defaultValues[0].sizes[0].cases[0].variant[0].id) {
         return defaultValues[0].sizes[0].cases[0].variant[0].image;
     }
-    return `/assets/sizes/${collectionId}/${sizeId}/${caseId}/${variantId}`;
+    return `/assets/sizes/${collectionId}/${sizeId}/${caseId}/${variantId}.png`;
 };
 
 const generateBandImagePath = (
@@ -36,7 +36,7 @@ const generateBandImagePath = (
         variantId === defaultValues[0].sizes[0].bands[0].variant[0].id) {
         return defaultValues[0].sizes[0].bands[0].variant[0].image;
     }
-    return `/assets/sizes/${collectionId}/${sizeId}/bands/${bandId}/${variantId}`;
+    return `/assets/sizes/${collectionId}/${sizeId}/bands/${bandId}/${variantId}.png`;
 };
 
 const initialState: WatchState = {
@@ -58,7 +58,7 @@ export const collectionSlice = createSlice({
     reducers: {
         setSelectedCollection: (state, action: PayloadAction<string>) => {
             state.selectedCollection = action.payload;
-            const collection = state.collections.find(c => c.id === action.payload);
+            const collection = defaultValues.find(c => c.id === action.payload);
             if (collection) {
                 state.selectedSize = collection.sizes[0].id;
                 state.selectedCase = collection.sizes[0].cases[0].id;
@@ -174,7 +174,7 @@ export const collectionSlice = createSlice({
                     action.payload,
                     band.variant[0].id
                 );
-                
+
                 state.selectedCaseImage = generateCaseImagePath(
                     state.selectedCollection!,
                     state.selectedSize!,

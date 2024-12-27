@@ -949,7 +949,25 @@ const series10Band40 = [
                 name: 'Blackberry Magentic Link',
                 price: 0,
                 image: ''
+            }, 
+            {
+                id: 'DEEP_BLUE_MODERN_BUCKLE',
+                name: 'Deep Blue Modern Buckle',
+                price: 0,
+                image: ''
             },
+            {
+                id: 'DARK_TAUPE_MODERN_BUCKLE',
+                name: 'Dark Taupe Modern Buckle',
+                price: 0,
+                image: ''
+            },
+            {
+                id: 'CHARTREUSE_MODERN_BUCKLE',
+                name: 'Chartreuse Modern Buckle',
+                price: 0,
+                image: ''
+            }
         ]
     },
     {
@@ -1777,7 +1795,7 @@ export const collection: watchCollection[] = [
                         name: 'Titanium',
                         variant: [
                             {
-                                id: 'Silver_TITANIUM',
+                                id: 'SILVER_TITANIUM',
                                 name: 'Silver Titanium Case',
                                 price: 0,
                                 image: ''
@@ -1798,7 +1816,7 @@ export const collection: watchCollection[] = [
                         name: 'Titanium',
                         variant: [
                             {
-                                id: 'Silver_TITANIUM',
+                                id: 'SILVER_TITANIUM',
                                 name: 'Silver Titanium Case',
                                 price: 0,
                                 image: ''
@@ -1982,8 +2000,8 @@ export const defaultValues:watchCollection[] = [
                         name: 'Aluminium',
                         variant: [
                             {
-                                id: 'JET_BLACK_ALUMINIUM',
-                                name: 'Jet Black Aluminium Case',
+                                id: 'SILVER_ALUMINIUM',
+                                name: 'Silver Aluminium Case',
                                 price: 0,
                                 image: ''
                             }
@@ -1996,8 +2014,8 @@ export const defaultValues:watchCollection[] = [
                         name: 'Solo Loop',
                         variant: [
                             {
-                                id: 'BLACK_SOLO_LOOP',
-                                name: 'Black Solo Loop',
+                                id: 'STAR_FRUIT_SOLO_LOOP',
+                                name: 'Star Fruit Solo Loop',
                                 price: 0,
                                 image: '',
         

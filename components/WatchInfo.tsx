@@ -36,17 +36,17 @@ export default function WatchInfo() {
         )
     );  
     return (
-        <div className="flex flex-col w-[70%] md:w-[60%]">
-            <span className="text-[#6e6e73] font-text font-semibold tracking-[-.01em] mb-[4px] text-xs uppercase">
+        <div className="flex flex-col w-[60%]">
+            <span className="text-[#6e6e73] font-text font-semibold tracking-normal mb-1 text-xs uppercase">
                 {currentCollection?.name}
             </span>
-            <span className="text-white/90 font-text font-semibold tracking-[-.016em] mb-[5px] overflow-hidden text-sm">
+            <span className="text-[#1d1d1f] dark:text-white/90 font-text font-semibold tracking-normal mb-1 overflow-hidden text-sm">
                 {`${currentSize?.name} ${currentCaseVariant?.name} with ${currentBandVariant?.name}`}
             </span>
-            <span className="text-white/70 font-regular mb-[5px] tracking-[-.016em] overflow-hidden text-sm">
+            <span className="text-[#1d1d1f] dark:text-white/70 font-regular mb-1 tracking-normal text-sm">
                 {`From $${totalPrice}`}
             </span>
-            <span className="text-white/50 font-text tracking-tight text-[12px] min-h-4">
+            <span className="dark:text-white/50 font-text tracking-tight text-xs min-h-4">
                 {isVariantSizeExclusive ? `${currentSize?.name} only` : ` `}
             </span>
         </div>
